@@ -6,4 +6,4 @@ langchain_openai==0.2.8
 langchain_core==0.3.18
 faiss-cpu==1.9.0
 numpy==1.26.4
-uvicorn==0.32.0
+uvicorn[standard]

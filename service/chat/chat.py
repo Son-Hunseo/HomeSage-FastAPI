@@ -18,9 +18,9 @@ def get_chat_ai_response(requestChatDto: RequestChatDto):
     else:
         for message in requestChatDto.chat_history:
             if message.type == "Human":
-                message_list.append(HumanMessage(content=message.chat_body))
+                message_list.append(HumanMessage(content=message.message))
             else:
-                message_list.append(AIMessage(content=message.chat_body))
+                message_list.append(AIMessage(content=message.message))
 
         message_list.append(HumanMessage(content=requestChatDto.message))
 
