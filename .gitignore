@@ -1,5 +1,5 @@
 secrets.yaml
-util/data
+util/data/raw_data
 .idea/
 
 # Created by https://www.toptal.com/developers/gitignore/api/windows,macos,python,pycharm

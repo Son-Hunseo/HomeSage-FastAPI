@@ -15,4 +15,5 @@ COPY . .
 
 ENV WORKERS=4
 
+# 0.0.0.0 으로 해야 외부 네트워크 연결 됨
 CMD uvicorn main:app --host 0.0.0.0 --port 8081 --workers $WORKERS
