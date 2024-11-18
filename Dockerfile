@@ -14,8 +14,7 @@ RUN pip install -r requirements.txt
 COPY . .
 
 ENV WORKERS=16
-ENV THREADS=8
 
 EXPOSE 8000
 
-CMD uvicorn main:app --host 0.0.0.0 --port 8000 --workers $WORKERS --workers-per_core $THREADS
+CMD uvicorn main:app --host 0.0.0.0 --port 8000 --workers $WORKERS
