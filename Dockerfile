@@ -13,6 +13,6 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-ENV WORKERS=16
+ENV WORKERS=4
 
 CMD uvicorn main:app --port 8000 --workers $WORKERS
