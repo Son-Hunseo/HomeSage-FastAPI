@@ -39,6 +39,6 @@ jobs:
           docker build -t ${{ env.SERVER_DOCKER_IMG_NAME }}:latest -f Dockerfile .
           docker run -d --name ${{ env.SERVER_DOCKER_IMG_NAME }} \
             -e OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} \
-            -p 8000:8000 \
+            -p 8081:8081 \
             ${{ env.SERVER_DOCKER_IMG_NAME }}:latest
           EOF

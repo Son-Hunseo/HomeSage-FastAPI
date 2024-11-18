@@ -15,4 +15,4 @@ COPY . .
 
 ENV WORKERS=4
 
-CMD uvicorn main:app --port 8000 --workers $WORKERS
+CMD uvicorn main:app --port 8081 --workers $WORKERS
