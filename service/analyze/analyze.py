@@ -35,7 +35,7 @@ def get_analyze_ai_response(requestAnalyzeDto: RequestAnalyzeDto):
             "context": term_retriever.invoke(requestAnalyzeDto.registered_text + requestAnalyzeDto.ledger_text),
             "fraud_context": fraud_retriever.invoke(requestAnalyzeDto.registered_text + requestAnalyzeDto.ledger_text),
             "registered_text": requestAnalyzeDto.registered_text,
-            "ledger_text": requestAnalyzeDto.registered_text
+            "ledger_text": requestAnalyzeDto.ledger_text
         }
     )
 
