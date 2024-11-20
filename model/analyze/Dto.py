@@ -1,8 +1,13 @@
 from pydantic import BaseModel
 
-class RequestAnalyzeDto(BaseModel):
+class RequestRegisteredAnalyzeDto(BaseModel):
     registered_text: str
+
+class ResponseRegisteredAnalyzeDto(BaseModel):
+    result: str
+
+class RequestLedgerAnalyzeDto(BaseModel):
     ledger_text: str
 
-class ResponseAnalyzeDto(BaseModel):
+class ResponseLedgerAnalyzeDto(BaseModel):
     result: str
