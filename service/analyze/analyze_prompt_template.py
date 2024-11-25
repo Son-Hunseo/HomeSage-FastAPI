@@ -34,6 +34,8 @@ def get_ledger_analyze_prompt_template():
     SYSTEM_TEMPLATE = """
     너는 부동산 전문가야.
     아래 사항들을 참고해서 해당 부동산에 대한 전반적인 설명을 해줘
+    
+    그리고 주의해야할 점이 있다면 이에대해서도 설명해줘
 
     {ledger_prompt}
 
